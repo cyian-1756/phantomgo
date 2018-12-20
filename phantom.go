@@ -53,9 +53,9 @@ type WebrowseParam struct {
 
 func NewPhantom() Phantomer {
 	phantom := &Phantom{
-		userAgent:     "Mozilla/5.0+(compatible;+Baiduspider/2.0;++http://www.baidu.com/search/spider.html)",
+		userAgent:     "Mozilla/5.0 (Windows NT 10.0; WOW64; rv:62.0) Gecko/20100101 Firefox/62.0",
 		pageEncode:    "utf-8",
-		phantomjsPath: GOPATH + "/src/github.com/k4s/phantomgo/phantomjs/phantomjs",
+		phantomjsPath: "/usr/bin/phantomjs",
 	}
 	//if the javascript file is no exist,creat it
 	if !phantom.Exist(GET_JS_FILE_NAME) {
